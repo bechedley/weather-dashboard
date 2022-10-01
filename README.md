@@ -29,6 +29,8 @@ OpenWeather (https://openweathermap.org/api)
 Bootstrap CSS Framework: (https://getbootstrap.com/)
 Bootstrap Documentation: (https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
+Apply gradient to full height of backround:
+Stack Overflow thread - CSS3 gradient background set on body doesn't stretch but instead repeats?, answer by Bryan Downing (https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats)
 
 ## License
 
