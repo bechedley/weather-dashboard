@@ -1,0 +1,69 @@
+:root {
+    --blue: #72B3ED;
+    --green: #27C3B4;
+    --navy: #45648E;
+    --light: #f2f3f4;
+    --yellow: #F7D93A;
+    --dark: #333;
+  }
+/* Apply linear gradient colour to full height of background */
+html {
+    height: 100%;
+}
+
+body {
+
+    background-image: linear-gradient(
+        var(--blue) 0%,
+        var(--light) 100%
+      );
+}
+
+h1 {
+    font-size: 65px;
+}
+
+p {
+    font-size: 14px;;
+}
+
+.button-navy {
+    background-color: var(--navy);
+    color: var(--light);
+    text-transform: uppercase;
+    border: none;
+}
+
+.white-text {
+    color: white;
+}
+
+.light-text {
+    color: var(--light);
+}
+
+.navy-text {
+    color: var(--navy);
+}
+
+.dark-text {
+    color: var(--dark);
+}
+
+.content {
+    margin-top: 50px;;
+}
+
+.current {
+    margin-top: 10px;
+}
+
+.forecast {
+    margin-top: 10px;
+}
+
+.city-footer {
+    background-color: var(--green);
+    color: var(--light);
+    text-transform: uppercase;
+}
