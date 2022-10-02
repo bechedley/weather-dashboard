@@ -26,6 +26,8 @@ Weather API:
 OpenWeather (https://openweathermap.org/api)
 5 Day Forecast API Documentation by OpenWeather: (https://openweathermap.org/forecast5)
 
+Geocoding API: (https://openweathermap.org/api/geocoding-api)
+
 Bootstrap CSS Framework: (https://getbootstrap.com/)
 Bootstrap Documentation: (https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
