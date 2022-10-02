@@ -31,11 +31,30 @@ p {
     font-size: 14px;;
 }
 
+ul {
+    justify-content: center;
+}
+
+li {
+    font-size: 14px;
+    font-weight: 100;
+}
+
 .button-navy {
     background-color: var(--navy);
     color: var(--light);
     text-transform: uppercase;
     border: none;
+}
+
+.button-history {
+    background-color: var(--navy);
+    color: var(--light);
+    text-transform: uppercase;
+    border: none;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px 25px;
 }
 
 .white-text {
@@ -83,13 +102,12 @@ p {
     text-align: center;
 }
 
-li {
-    font-size: 14px;
-    font-weight: 100;
-}
-
 .day-header {
     background-color: var(--navy);
     color: white;
     text-align: center;
+}
+
+#search-list {
+    justify-content: center;
 }
