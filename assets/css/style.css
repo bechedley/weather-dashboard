@@ -17,6 +17,10 @@ body {
         var(--blue) 0%,
         var(--light) 100%
       );
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -51,7 +55,7 @@ p {
 }
 
 .content {
-    margin-top: 50px;;
+    margin-top: 20px;;
 }
 
 .current {
@@ -66,4 +70,26 @@ p {
     background-color: var(--green);
     color: var(--light);
     text-transform: uppercase;
+}
+
+.weather-icon {
+    background-color: var(--yellow);
+    border-radius: 100%;
+}
+
+.day-card {
+    margin: 5px;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.day-header {
+    background-color: var(--navy);
+    color: white;
+    text-align: center;
 }

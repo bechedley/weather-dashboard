@@ -21,14 +21,15 @@
 
     <main>
         <div class="container content">
-            <div class="row col justify-content-center">
+            <div class="row col">
                 <div class="col-6">
                     <form class="inline" id="city-search">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" id="search-input" placeholder="Enter a city..." aria-label="Recipient's username"
-                                aria-describedby="button-addon2">
+                            <input type="text" class="form-control" id="search-input" placeholder="Enter a city..."
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-dark button-navy" type="submit" id="button-addon2">Search</button>
+                                <button class="btn btn-dark button-navy" type="submit"
+                                    id="button-addon2">Search</button>
                             </div>
                         </div>
                     </form>
@@ -36,26 +37,27 @@
             </div>
             <div class="row">
                 <div class="col-9">
-                    <div class="row col-6 current">
+                    <div class="row col-8 current">
                         <div class="card text-center bg-transparent border-0" id="city-current">
                             <div class="card-body bg-white">
                                 <h5 class="card-title navy-text" id="city-current-temp"></h5>
                                 <div class="row">
-                                <div class="col" id="city-current-icon align-middle"></div>
-                                <div class="col navy-text" id="city-current-degrees">
-                                    <h1></h1>
-                                </div>
-                                <div class="col navy-text" id="city-current-extra">
-                                    <p id="city-current-wind"></p>
-                                    <p id="city-current-humidity"></p>
-                                </div>
+                                    <div class="col align-middle"><img class="border-0 weather-icon"
+                                            id="city-current-icon" alt="weather icon" class="img-thumbnail"></div>
+                                    <div class="col navy-text">
+                                        <h1 id="city-current-degrees"></h1>
+                                    </div>
+                                    <div class="col navy-text align-middle" id="city-current-extra">
+                                        <p id="city-current-wind"></p>
+                                        <p id="city-current-humidity"></p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card-footer city-footer h4" id="city-current-footer"></div>
                         </div>
                     </div>
-                    <div class="row col-8 forecast" id="5-day">
-                        <h3 class="white-text" id="5-day-heading"></h3>
+                    <div class="row col forecast" id="five-day">
+                        <h3 class="white-text" id="five-day-heading">5 Day Forecast</h3>
                     </div>
                 </div>
                 <div class="col-3">
@@ -72,6 +74,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/display-results.js"></script>
 </body>
 
