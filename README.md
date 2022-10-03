@@ -14,8 +14,8 @@ Open the webpage and search for your chosen city. You will be taken to a results
 
 Website URL: (https://bechedley.github.io/weather-dashboard/)
 
-![Screenshot of webpage](/week-6/weather-dashboard/assets/Images/weather-app-screenshot.png)
-![Screenshot of webpage with splitscreen showing the Chrome dev tools window](/week-6/weather-dashboard/assets/Images/weather-app-screenshot-dev-tools.png)
+![Screenshot of webpage](/assets/Images/weather-app-screenshot.png)
+![Screenshot of webpage with splitscreen showing the Chrome dev tools window](/assets/Images/weather-app-screenshot-dev-tools.png)
     
 
 ## Credits
