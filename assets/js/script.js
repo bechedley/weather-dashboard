@@ -75,7 +75,7 @@ function renderSearches() {
         var citySearch = citySearches[i];
 
         var searchBtn = document.createElement("button");
-        searchBtn.setAttribute("id", "recent");
+        searchBtn.setAttribute("id", citySearch.searchInputVal);
         searchBtn.classList.add("btn", "btn-lg", "btn-block", "button-history");
         searchBtn.setAttribute("type", "button");
         searchBtn.textContent = citySearch.searchInputVal;
@@ -90,3 +90,22 @@ init();
 
 // Search Event Listener
 searchFormEl.addEventListener('submit', handleSearchFormSubmit);
+
+// Add event listener to search history
+searchList.addEventListener("click", function(event) {
+    var element = event.target;
+  
+    // Checks if element is a button
+    if (element.matches("button") === true) {
+      // Get the button id
+      var newSearchQuery = element.getAttribute("id");
+      //var newSearch = button[index].textContent;
+      console.log(newSearchQuery);
+
+      var newQueryString = './search-results.html?q=' + newSearchQuery;
+
+    // open new page for results
+    location.assign(newQueryString);
+      
+    }
+  });
