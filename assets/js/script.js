@@ -38,7 +38,7 @@ function handleSearchFormSubmit(event) {
 
     // open new page for results
     location.assign(queryString);
-    
+
 
 }
 
@@ -68,10 +68,10 @@ function renderSearches() {
 
     // Add searches to recent searches
     searchList.innerHTML = '';
-    searchAgainText.appendChild(searchList);
+    searchAgainText.after(searchList);
 
-    //Create for loop to render each score result to a new line item
-    for(var i = 0; i < citySearches.length; i++) {
+    //Create for loop to render each search query to a new line item
+    for (var i = 0; i < citySearches.length; i++) {
         var citySearch = citySearches[i];
 
         var searchBtn = document.createElement("button");
@@ -92,20 +92,20 @@ init();
 searchFormEl.addEventListener('submit', handleSearchFormSubmit);
 
 // Add event listener to search history
-searchList.addEventListener("click", function(event) {
+searchList.addEventListener("click", function (event) {
     var element = event.target;
-  
+
     // Checks if element is a button
     if (element.matches("button") === true) {
-      // Get the button id
-      var newSearchQuery = element.getAttribute("id");
-      //var newSearch = button[index].textContent;
-      console.log(newSearchQuery);
+        // Get the button id
+        var newSearchQuery = element.getAttribute("id");
+        //var newSearch = button[index].textContent;
+        console.log(newSearchQuery);
 
-      var newQueryString = './search-results.html?q=' + newSearchQuery;
+        var newQueryString = './search-results.html?q=' + newSearchQuery;
 
-    // open new page for results
-    location.assign(newQueryString);
-      
+        // open new page for results
+        location.assign(newQueryString);
+
     }
-  });
+});

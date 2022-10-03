@@ -14,8 +14,8 @@ Open the webpage and search for your chosen city. You will be taken to a results
 
 Website URL: (https://bechedley.github.io/weather-dashboard/)
 
-
-![Screenshot of webpage with splitscreen showing the Chrome dev tools window](/#)
+![Screenshot of webpage](/week-6/weather-dashboard/assets/Images/weather-app-screenshot.png)
+![Screenshot of webpage with splitscreen showing the Chrome dev tools window](/week-6/weather-dashboard/assets/Images/weather-app-screenshot-dev-tools.png)
     
 
 ## Credits
@@ -33,6 +33,8 @@ Bootstrap Documentation: (https://getbootstrap.com/docs/5.2/getting-started/intr
 
 Apply gradient to full height of backround:
 Stack Overflow thread - CSS3 gradient background set on body doesn't stretch but instead repeats?, answer by Bryan Downing (https://stackoverflow.com/questions/2869212/css3-gradient-background-set-on-body-doesnt-stretch-but-instead-repeats)
+
+Common js functions and parameters, for loops and arrays: JS CheatSheet by HTML CheatSheet (https://htmlcheatsheet.com/js/)
 
 ## License
 
