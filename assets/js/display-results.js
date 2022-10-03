@@ -69,10 +69,16 @@ function getGeoParams() {
 
     console.log(resultObj);
 
+    // Determine icon img src
     var forecastIconRes = resultObj.weather[0].icon;
     var forecastIconSrc = "https://openweathermap.org/img/wn/" + forecastIconRes + "@2x.png";
 
-    console.log(resultObj.wind.speed);
+    // Isolate date from time stamp
+    var dateNew = resultObj.dt_txt;
+    var dateOnly = dateNew.split(" ").shift();
+
+    console.log(dateOnly);
+
     
     // Create elements to display results
     var dayCard = document.createElement('div');
@@ -82,7 +88,7 @@ function getGeoParams() {
     var cardDate = document.createElement('div');
     cardDate.classList.add("card-header", "day-header", "white-text");
     dayCard.appendChild(cardDate);
-    cardDate.textContent = "Date";
+    cardDate.textContent = moment(dateOnly, "YYYY-MM-DD").format("DD/MM/YYYY");
 
     var cardBody = document.createElement('div');
     cardBody.classList.add("card-body")
