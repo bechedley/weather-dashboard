@@ -64,9 +64,9 @@ function storeSearches() {
 // Render searches
 function renderSearches() {
     // Update text content of search history
-    //if (searches !== null) {
-    searchAgainText.textContent = "SEARCH AGAIN";
-   // }
+  
+    searchAgainText.textContent = "";
+   
 
     // Add searches to recent searches
     searchList.innerHTML = '';
