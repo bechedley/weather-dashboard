@@ -88,13 +88,19 @@ function printForecast(resultObj) {
 
 
   // Create elements to display results
+  var dayUl = document.getElementById('day-ul');
+
+  var dayLi = document.createElement('li');
+  dayLi.classList.add("list-group-item", ".flex-fill", "day-li", "bg-transparent")
   var dayCard = document.createElement('div');
-  dayCard.classList.add("card", "col-2", "day-card")
-  forecastHeading.after(dayCard);
+  dayCard.classList.add("card", "day-card")
+
+  dayUl.appendChild(dayLi);
+  dayLi.appendChild(dayCard);
 
   // Display date
   var cardDate = document.createElement('div');
-  cardDate.classList.add("card-header", "day-header", "white-text");
+  cardDate.classList.add("card-header", "day-header", "white-text", "h6");
   dayCard.appendChild(cardDate);
   cardDate.textContent = moment(dateOnly, "YYYY-MM-DD").format("DD/MM/YYYY");
 
@@ -116,7 +122,7 @@ function printForecast(resultObj) {
   cardRow.appendChild(cardIcon);
 
   // Display temp
-  var cardDegrees = document.createElement("h4");
+  var cardDegrees = document.createElement("h3");
   cardDegrees.classList.add("navy-text");
   cardDegrees.innerHTML = resultObj.main.temp + "°c";
   cardIcon.after(cardDegrees);
