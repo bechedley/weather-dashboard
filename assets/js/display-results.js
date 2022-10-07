@@ -176,10 +176,20 @@ function getWeather(lat, lon) {
 
       // Identify current timestamp
       var timeStamp = locRes.list[0].dt_txt;
-      console.log(timeStamp);
+      // Identify timezone offset in seconds and convert to minutes
+      var offset = (locRes.city.timezone)/60;
+      // Get local time conversion of timeStamp
+      var localTime = moment.parseZone(timeStamp, "YYYY-MM-DD HH:mm:ss").utcOffset(offset).format("YYYY-MM-DD HH:mm:ss");
+      console.log(localTime);
 
-      // Isolate indexes of midday timestamps to render 5 day forecast
-      if (timeStamp.includes("00:00:00")) {
+      // Isolate hour only of new local timestamp
+      timeOnly = localTime.split(" ").pop();
+      hourOnly = timeOnly.split(":").shift();
+      console.log(hourOnly);
+
+      // Isolate indexes of midday timestamps to render 5 day forecast - commented out versions are the original UTC midday timestamp indexes
+      if (hourOnly == 00 || hourOnly == 22 || hourOnly == 23) {
+      //if (timeStamp.includes("00:00:00")) {
 
         for (var i = 0; i < locRes.list.length; i++) {
 
@@ -191,7 +201,8 @@ function getWeather(lat, lon) {
         }
       }
 
-      if (timeStamp.includes("03:00:00")) {
+      if (hourOnly == 01 || hourOnly == 02 || hourOnly == 03) {
+      //if (timeStamp.includes("03:00:00")) {
 
         for (var i = 0; i < locRes.list.length; i++) {
 
@@ -203,7 +214,8 @@ function getWeather(lat, lon) {
         }
       }
 
-      if (timeStamp.includes("06:00:00")) {
+      if (hourOnly == 04 || hourOnly == 05 || hourOnly == 06) {
+      //if (timeStamp.includes("06:00:00")) {
 
         for (var i = 0; i < locRes.list.length; i++) {
 
@@ -215,7 +227,8 @@ function getWeather(lat, lon) {
         }
       }
 
-      if (timeStamp.includes("09:00:00")) {
+      if (hourOnly == 07 || hourOnly == 08 || hourOnly == 09) {
+      //if (timeStamp.includes("09:00:00")) {
 
         for (var i = 0; i < locRes.list.length; i++) {
 
@@ -227,7 +240,8 @@ function getWeather(lat, lon) {
         }
       }
 
-      if (timeStamp.includes("12:00:00")) {
+      if (hourOnly == 10 || hourOnly == 11 || hourOnly == 12) {
+      //if (timeStamp.includes("12:00:00")) {
 
         for (var i = 0; i < locRes.list.length; i++) {
 
@@ -239,7 +253,8 @@ function getWeather(lat, lon) {
         }
       }
 
-      if (timeStamp.includes("15:00:00")) {
+      if (hourOnly == 13 || hourOnly == 14 || hourOnly == 15) {
+      //if (timeStamp.includes("15:00:00")) {
 
         for (var i = 0; i < locRes.list.length; i++) {
 
@@ -251,7 +266,8 @@ function getWeather(lat, lon) {
         }
       }
 
-      if (timeStamp.includes("18:00:00")) {
+      if (hourOnly == 16 || hourOnly == 17 || hourOnly == 18) {
+      //if (timeStamp.includes("18:00:00")) {
 
         for (var i = 0; i < locRes.list.length; i++) {
 
@@ -263,7 +279,8 @@ function getWeather(lat, lon) {
         }
       }
 
-      if (timeStamp.includes("21:00:00")) {
+      if (hourOnly == 19 || hourOnly == 20 || hourOnly == 21) {
+      //if (timeStamp.includes("21:00:00")) {
 
         for (var i = 0; i < locRes.list.length; i++) {
 
