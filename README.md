@@ -1,4 +1,4 @@
-# Week Five Challenge: Work Day Scheduler
+# Week Six Challenge: Weather Dashboard
 
 ## Description
 
